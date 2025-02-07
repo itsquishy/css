@@ -1,7 +1,7 @@
 /* this was meant to be used with the Desktop Visual Refresh Experiment (2024-05_desktop_visual_refresh)
 - @itsquishy */
 
-/* Hover Server List */
+/* hover server list */
 [class*="guilds"] {
   opacity: 0;
   transform: translateX(-65px);
@@ -15,7 +15,7 @@
   transform: translateX(0);
 }
 
-/* Base position */
+/* base position */
 [class*="sidebarList_c48ade"] {
   margin-left: -65px;  /* Shifts left side */
   transition: margin-left 0.2s ease;
