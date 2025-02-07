@@ -1,0 +1,27 @@
+/* this was meant to be used with the Desktop Visual Refresh Experiment (2024-05_desktop_visual_refresh)
+- @itsquishy */
+
+/* Hover Server List */
+[class*="guilds"] {
+  opacity: 0;
+  transform: translateX(-65px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.2s ease;
+}
+
+[class*="guilds"]:hover {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Base position */
+[class*="sidebarList_c48ade"] {
+  margin-left: -65px;  /* Shifts left side */
+  transition: margin-left 0.2s ease;
+}
+
+/* when hover server list, channel list moves out of way */
+[class*="guilds"]:hover + [class*="sidebarList_c48ade"] {
+  margin-left: 0;
+}
